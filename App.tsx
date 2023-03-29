@@ -22,12 +22,6 @@ const handleInputSet = (event: React.ChangeEvent<HTMLInputElement | HTMLTextArea
       ...prevValues,
       [name]: value
     }));
-
-    console.log(formValues.name);
-    if (formValues.name != "" && formValues.email != "")
-  {
-    submitButtonDisabled = false;
-  }
   }
 
  const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
